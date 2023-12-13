@@ -141,8 +141,9 @@ int main()
         printf("###Cartório da EBAC###\n\n");
         printf("\t\t\t\t\t\t\t\t\t\tESCOLHA A OPÇÃO DESEJADA DO MENU\n");
         printf("1 - Registrar nomes");
-        printf("\t\t\t\t\t\t\t\t2 - Consultar nomes");
-        printf("\t\t\t\t\t\t\t\t\t3 - Deletar nomes\n");
+        printf("\t\t\t\t2 - Consultar nomes");
+        printf("\t\t\t\t\t3 - Deletar nomes");
+        printf("\t\t\t\t\t\t4 - sair do progra");
         printf("\n\n\n\nEste Software foi criado por Ryan Vasconcelos para uso privado");
         printf("\nAperte 'F11' para melhor usabilidade.");
 		printf("\nOpção:");
@@ -167,8 +168,13 @@ int main()
             // Chama a função de deletar
             deletar();
             break;
-
-        default:
+        
+        case 4:
+        printf("Obrigado por utilizar o sistem\n");
+        return 0;
+        break;
+        
+		default:
             // Chama a função de erro para opções inválidas
             erro();
             break;
